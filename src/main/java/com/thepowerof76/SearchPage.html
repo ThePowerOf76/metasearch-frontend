@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    <form wicket:id="query_form">
+        <input wicket:id="q_field" type="text" id="query" placeholder="Enter your query here."/>
+    <input type="submit">
+</form>
+    <ul wicket:id="results">
+        <li>
+        <h3>
+            <a wicket:id="link">Example</a>
+        </h3>
+        <div>
+            <span wicket:id="description">This is an example description</span>
+        </div>
+        <div>
+            <p wicket:id="engines">Google Bing DuckDuckGo Archive BaseSearch Wiby</p>
+        </div>
+        </li>
+    </ul>
+    <button wicket:id="prev">Previous page</button>
+    <button wicket:id="next">Next page</button>
+</body>
+</html>
