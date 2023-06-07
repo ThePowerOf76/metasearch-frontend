@@ -23,8 +23,7 @@
 	<groupId>com.thepowerof76</groupId>
 	<artifactId>metasearch-frontend</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
-		<!-- TODO project name  -->
+	<version>1.0</version>
 	<name>metasearch-frontend</name>
 	<description>thepowerof76's metasearch engine</description>
 	<!--
