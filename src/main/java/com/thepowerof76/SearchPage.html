@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="search.css"/>
 </head>
 <body>
-    <form wicket:id="query_form">
-        <input wicket:id="q_field" type="text" id="query" placeholder="Enter your query here."/>
-    <input type="submit">
-</form>
-    <ul wicket:id="results">
-        <li>
-        <h3>
-            <a wicket:id="link">Example</a>
-        </h3>
-        <div>
-            <span wicket:id="description">This is an example description</span>
+    <div class="flex-container">
+        <div class="query_bar">
+            <form wicket:id="query_form">
+                <input wicket:id="q_field" type="text" id="query" placeholder="Enter your query here."/>
+                <input type="submit" value="Search">
+            </form>
         </div>
-        <div>
-            <p wicket:id="engines">Google Bing DuckDuckGo Archive BaseSearch Wiby</p>
+        <div class="res">
+            <ul wicket:id="results">
+                <li>
+                    <h3>
+                        <a wicket:id="link">Example</a>
+                    </h3>
+                    <div>
+                        <span wicket:id="description">This is an example description</span>
+                    </div>
+                    <div>
+                        <p wicket:id="engines">Google Bing DuckDuckGo Archive BaseSearch Wiby</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        </li>
-    </ul>
-    <button wicket:id="prev">Previous page</button>
-    <button wicket:id="next">Next page</button>
+        <div class="page_bar">
+            <button wicket:id="prev" id="prev_b">Previous page</button>
+            <button wicket:id="next" id="next_b">Next page</button>
+        </div>
+    </div>
 </body>
 </html>
