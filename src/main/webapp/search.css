@@ -30,6 +30,10 @@ html, body {
     border-width: 3px;
     border-color: #000000;
 }
+#res {
+  margin: 25px auto;
+  height: 60%;
+}
 button {
     border-radius: 20px;
     width: 150px;
