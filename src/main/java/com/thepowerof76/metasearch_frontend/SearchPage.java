@@ -1,7 +1,7 @@
-package com.thepowerof76;
+package com.thepowerof76.metasearch_frontend;
 
 import com.thepowerof76.metasearch_backend.util.MetaResult;
-import com.thepowerof76.util.ResultGetter;
+import com.thepowerof76.metasearch_backend.util.ResultGetter;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.StatelessForm;
@@ -33,7 +33,7 @@ public class SearchPage extends WebPage {
         if(parameters.isEmpty() || String.valueOf(parameters.get("query")).equals("") || String.valueOf(parameters.get("query")).equals(" ")) {
             setResponsePage(HomePage.class);
         }
-        TextField<String> query_field = new TextField<>("q_field", Model.of(""));
+        TextField<String> query_field = new TextField<>("q_field", Model.of(parameters.get("query").toString()));
         StatelessForm<Void> query_form = new StatelessForm<>("query_form") {
             @Override
             protected void onSubmit() {

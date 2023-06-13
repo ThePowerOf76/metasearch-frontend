@@ -21,7 +21,7 @@
 		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
 		<init-param>
 			<param-name>applicationClassName</param-name>
-			<param-value>com.thepowerof76.WicketApplication</param-value>
+			<param-value>com.thepowerof76.metasearch_frontend.WicketApplication</param-value>
 		</init-param>
 	</filter>
 	<filter-mapping>

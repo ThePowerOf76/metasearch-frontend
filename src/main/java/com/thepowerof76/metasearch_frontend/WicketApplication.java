@@ -1,4 +1,4 @@
-package com.thepowerof76;
+package com.thepowerof76.metasearch_frontend;
 
 import org.apache.wicket.RuntimeConfigurationType;
 import org.apache.wicket.csp.CSPDirective;
